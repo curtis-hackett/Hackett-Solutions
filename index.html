@@ -1,17 +1,210 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Contact Hackett Solutions</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hackett Solutions</title>
   <style>
-    body { background: #fff; font-family: sans-serif; text-align: center; padding: 100px; }
-    h1 { font-size: 36px; margin-bottom: 20px; }
-    p { font-size: 20px; }
-    a { color: #0000EE; text-decoration: underline; }
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f5f5f5;
+      color: #1A2B4C;
+    }
+    header {
+      background-color: #1A2B4C;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background-color: #e0ecf8;
+      padding: 60px 40px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .hero button {
+      background-color: #FFD700;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .services {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px;
+      background-color: #fff;
+    }
+    .service {
+      width: 30%;
+      text-align: center;
+    }
+    .service h3 {
+      margin-top: 10px;
+    }
+    .about {
+      display: flex;
+      align-items: center;
+      padding: 40px;
+      background-color: #f5f5f5;
+    }
+    .about img {
+      width: 40%;
+      border-radius: 10px;
+      margin-right: 40px;
+    }
+    .about-text {
+      width: 60%;
+    }
+    .testimonials {
+      background-color: #1A2B4C;
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+    .contact {
+      display: flex;
+      padding: 40px;
+      background-color: #fff;
+    }
+    .contact-form {
+      width: 50%;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      background-color: #1A2B4C;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+    }
+    .contact-info {
+      width: 50%;
+      padding-left: 40px;
+    }
+    footer {
+      background-color: #1A2B4C;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin-right: 15px;
+    }
   </style>
 </head>
 <body>
-  <h1>Hackett Solutions</h1>
-  <p>We’re offline for now, but still reachable.</p>
-  <p>Email us at <a href="mailto:curtis.hackett@hackettsolutions.com">curtis.hackett@hackettsolutions.com</a></p>
+
+  <header>
+    <div><strong>🔧 HACKETT</strong></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Client Portal</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Empowering Businesses with Smart Solutions</h1>
+    <p>Serving St. Albert and beyond with reliable IT, consulting, and digital strategy.</p>
+    <button>Get a Free Consultation</button>
+  </section>
+
+  <section class="services">
+    <div class="service">
+      <div>🖥️</div>
+      <h3>IT Support & Infrastructure</h3>
+      <p>Manage your decorum.</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="service">
+      <div>💼</div>
+      <h3>Business Consulting</h3>
+      <p>Utilotics and varitial digital strategy.</p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="service">
+      <div>🌐</div>
+      <h3>Web & Digital Strategy</h3>
+      <p>Integrity.</p>
+      <a href="#">Learn More</a>
+    </div>
+  </section>
+
+  <section class="about">
+    <img src="https://via.placeholder.com/400x300" alt="Team Photo" />
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>At Hackett Solutions, we believe in empowering local businesses through technology and trust:</p>
+      <ul>
+        <li>Integrity</li>
+        <li>Innovation</li>
+        <li>Community</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>Testimonials</h2>
+    <p>"Hackett Solutions transformed our operations – fast, friendly, and local."</p>
+    <p>"Curtis and his team are the real deal."</p>
+  </section>
+
+  <section class="contact">
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <input type="text" placeholder="Name" />
+      <input type="email" placeholder="Email" />
+      <textarea rows="5" placeholder="Message"></textarea>
+      <button>Send</button>
+    </div>
+    <div class="contact-info">
+      <h3>Find Us</h3>
+      <p>📍 St. Albert, AB</p>
+      <p>📧 <a href="mailto:you@hackettsolutions.com">you@hackettsolutions.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+    <div>
+      <span>© 2025 Hackett Solutions</span>
+    </div>
+  </footer>
+
 </body>
 </html>
