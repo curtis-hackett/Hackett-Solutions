@@ -1,0 +1,1 @@
+export default function Image(){ return <div>OG Image</div>; }
